@@ -14,31 +14,31 @@ def comprobar_resultados(p1, p2, p3, p4, p5, p6):
         return C1
 
     
-    if p1 == True and p2 == True:
+    elif p1 == True and p2 == True:
         return C5
 
    
-    if p1 == True and p3 == False and p2 == False:
+    elif p1 == True and p3 == False and p2 == False:
         return C3
 
    
-    if p1 == True and p4 == True and p3 == True:
+    elif p1 == True and p4 == True and p3 == True:
         return C2
 
     
-    if p1 == True and p4 == True and p3 == False:
-        return f"{C2} — prioridad sobre papel si indicador tóner crítico"
+    elif p1 == True and p4 == True and p3 == False:
+        return f"{C2} — prioridad sobre papel si indicador toner critico"
 
     
-    if p1 == True and p4 == False and p5 == True:
+    elif p1 == True and p4 == False and p5 == True:
         return C4
 
     
-    if p1 == True and p4 == False and p5 == False and p6 == True and p2 == False:
+    elif p1 == True and p4 == False and p5 == False and p6 == True and p2 == False:
         return C6
 
 
-    if (
+    elif (
         p1 == True and
         p3 == True and
         p4 == False and
@@ -48,22 +48,23 @@ def comprobar_resultados(p1, p2, p3, p4, p5, p6):
     ):
         return C7
 
-    if p1 == True and p2 == True and p6 == True:
+    elif p1 == True and p2 == True and p6 == True:
         return f"{C5} (con posible daño)"
     
-    if p1 == True and p3 == False and p5 == True:
-        return f"{C3} y {C4} (preferencia: reponer papel primero)"
+    elif p1 == True and p3 == False and p5 == True:
+        return f"{C3} y {C4} reponer papel primero"
 
-    return "Sin diagnóstico claro — revisar manualmente."
+    else:
+        return "Sin diagnostico claro"
 
 
 
 resultado = comprobar_resultados(
     p1=True, 
-    p2=False,  
+    p2=True,  
     p3=False,   
     p4=False, 
-    p5=False, 
+    p5=True, 
     p6=True 
 )
 
