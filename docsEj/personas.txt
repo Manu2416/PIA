@@ -1,1 +1,12 @@
-gaston,mate,12
+Manu,Lengua,6
+Manu,Matematicas,7
+Manu,Historia,5
+Manu,Ingles,8
+Lucia,Lengua,9
+Lucia,Matematicas,10
+Lucia,Historia,8
+Lucia,Ingles,7
+Carlos,Lengua,5
+Carlos,Matematicas,6
+Carlos,Historia,7
+Carlos,Ingles,6
